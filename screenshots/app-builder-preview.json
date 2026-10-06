@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Wimampgtm",
+      "hasCanvas": false,
+      "bodyTextLen": 679,
+      "bodyTextHash": "b9c6917e7a19be2c70fce08e6e3e968c4a9c11efc84df332ce4fc7adab5647eb",
+      "bodyTextPrefix": "WIMAMP GTM STOCK _ × WIMAMP GTM - stock skin - press play 0:00 0",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Wimampgtm",
+      "hasCanvas": false,
+      "bodyTextLen": 679,
+      "bodyTextHash": "b9c6917e7a19be2c70fce08e6e3e968c4a9c11efc84df332ce4fc7adab5647eb",
+      "bodyTextPrefix": "WIMAMP GTM STOCK _ × WIMAMP GTM - stock skin - press play 0:00 0",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
