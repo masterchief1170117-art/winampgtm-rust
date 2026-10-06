@@ -17,8 +17,8 @@ export function Visor({ mode, playing, onCycle }: { mode: VisMode; playing: bool
       const scope = scopeRef.current;
       if (!bars || !scope) return;
       const idle = !playing || mode === "off";
-      bars.hidden = mode === "scope";
-      scope.hidden = mode !== "scope";
+      bars.style.display = mode === "scope" ? "none" : "flex";
+      scope.style.display = mode === "scope" ? "block" : "none";
       if (idle) {
         for (const child of bars.children) {
           (child as HTMLElement).style.height = "2px";
@@ -75,7 +75,7 @@ export function Visor({ mode, playing, onCycle }: { mode: VisMode; playing: bool
         ))}
       </div>
       <svg className="scope" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-        <polyline ref={scopeRef} points="0,50 100,50" hidden />
+        <polyline ref={scopeRef} points="0,50 100,50" style={{ display: "none" }} />
       </svg>
     </div>
   );

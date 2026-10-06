@@ -1,0 +1,52 @@
+[package]
+name = "wimampgtm"
+version = "0.1.0"
+edition = "2021"
+description = "Wimampgtm stock skin, Rust and WebAssembly"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+console_error_panic_hook = "0.1"
+js-sys = "=0.3.77"
+wasm-bindgen = "=0.2.100"
+wasm-bindgen-futures = "=0.4.50"
+web-sys = { version = "=0.3.77", features = [
+  "AnalyserNode",
+  "AudioBuffer",
+  "AudioBufferOptions",
+  "AudioBufferSourceNode",
+  "AudioContext",
+  "AudioDestinationNode",
+  "AudioNode",
+  "AudioParam",
+  "BaseAudioContext",
+  "BiquadFilterNode",
+  "BiquadFilterType",
+  "Blob",
+  "CssStyleDeclaration",
+  "Document",
+  "DomRect",
+  "DragEvent",
+  "DataTransfer",
+  "Element",
+  "EventTarget",
+  "File",
+  "FileList",
+  "GainNode",
+  "HtmlElement",
+  "HtmlInputElement",
+  "HtmlSelectElement",
+  "KeyboardEvent",
+  "Node",
+  "PointerEvent",
+  "StereoPannerNode",
+  "Window",
+  "console",
+] }
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1

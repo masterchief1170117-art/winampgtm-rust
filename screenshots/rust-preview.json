@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/rust",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Wimampgtm",
+      "hasCanvas": false,
+      "bodyTextLen": 627,
+      "bodyTextHash": "e0ac04ca77e11bd73a22477b929ccb9c2d834b872d21c26ce91ddbcc0d3ca9df",
+      "bodyTextPrefix": "JS skin · Rust build of the stock skin WIMAMP RUST WASM RUST - p",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/rust-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Wimampgtm",
+      "hasCanvas": false,
+      "bodyTextLen": 627,
+      "bodyTextHash": "e0ac04ca77e11bd73a22477b929ccb9c2d834b872d21c26ce91ddbcc0d3ca9df",
+      "bodyTextPrefix": "JS skin · Rust build of the stock skin WIMAMP RUST WASM RUST - p",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/rust-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/rust-preview.json"
+}

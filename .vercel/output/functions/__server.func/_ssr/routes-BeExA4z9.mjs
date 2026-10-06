@@ -1,8 +1,8 @@
 import { i as __toESM } from "../_runtime.mjs";
-import { K as require_react, b as require_jsx_runtime } from "../_libs/@tanstack/react-router+[...].mjs";
+import { q as require_react, x as require_jsx_runtime, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as Shuffle, c as Pause, i as SkipBack, l as FolderOpen, n as Square, o as Repeat, r as SkipForward, s as Play } from "../_libs/lucide-react.mjs";
 import { t as create } from "../_libs/zustand.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DU35HP2g.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-BeExA4z9.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var FREQS = [
@@ -1294,8 +1294,8 @@ function Visor({ mode, playing, onCycle }) {
 			const scope = scopeRef.current;
 			if (!bars || !scope) return;
 			const idle = !playing || mode === "off";
-			bars.hidden = mode === "scope";
-			scope.hidden = mode !== "scope";
+			bars.style.display = mode === "scope" ? "none" : "flex";
+			scope.style.display = mode === "scope" ? "block" : "none";
 			if (idle) {
 				for (const child of bars.children) child.style.height = "2px";
 				scope.setAttribute("points", "0,50 100,50");
@@ -1353,7 +1353,7 @@ function Visor({ mode, playing, onCycle }) {
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("polyline", {
 				ref: scopeRef,
 				points: "0,50 100,50",
-				hidden: true
+				style: { display: "none" }
 			})
 		})]
 	});
@@ -1923,9 +1923,16 @@ function Player() {
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(EqWindow, {}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PlaylistWindow, { onOpen: openFiles })
 			] }),
-			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
 				className: "desk-hint",
-				children: "Space plays. Z X C V B are the old transport keys. Click the visor. Drop audio to add it."
+				children: [
+					"Space plays. Z X C V B are the old transport keys. Click the visor. Drop audio to add it.",
+					" ",
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+						to: "/rust",
+						children: "Rust version"
+					})
+				]
 			})
 		]
 	});

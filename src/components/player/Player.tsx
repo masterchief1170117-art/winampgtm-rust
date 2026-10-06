@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "@tanstack/react-router";
 import { Play } from "lucide-react";
 import { EqWindow } from "@/components/player/EqWindow";
 import { MainWindow } from "@/components/player/MainWindow";
@@ -99,7 +100,10 @@ export function Player() {
           <PlaylistWindow onOpen={openFiles} />
         </>
       )}
-      <p className="desk-hint">Space plays. Z X C V B are the old transport keys. Click the visor. Drop audio to add it.</p>
+      <p className="desk-hint">
+        Space plays. Z X C V B are the old transport keys. Click the visor. Drop audio to add it.{" "}
+        <Link to="/rust">Rust version</Link>
+      </p>
     </div>
   );
 }
